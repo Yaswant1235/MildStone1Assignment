@@ -1,0 +1,54 @@
+<!-- // const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// const squaresOfEvenNumbers = numbers.filter(ele => ele % 2 == 0)
+//                                     .map(ele => ele ** 2);
+// console.log(squaresOfEvenNumbers); -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim quod quos, modi architecto, praesentium tenetur suscipit assumenda, sit neque odit, illum minima voluptates? Dolor non dolore accusamus quam maiores.
+        </p>
+    <script>
+        const setup = () => {
+    const p = document.querySelector('p');
+  
+    wrapWordsWithLengthEight(p);
+  }
+  
+  const check = (word) => {
+  
+    //Check if word include a .|,|?
+    const hasCharacter = word.includes(".", word.length - 1)
+    || word.includes(",", word.length - 1)
+    || word.includes('?', word.length - 1);
+    //Calculate real word length
+    const wordLength = hasCharacter ? (word.length -1) : word.length;
+    if(wordLength > 8) {
+      const spanContent = hasCharacter ? word.substring(0, word.length - 1) : word;
+      const endCharacter = hasCharacter ? (word.substring(word.length - 1)) : '';
+      word = `<mark>${spanContent}</mark>${endCharacter} `;
+    }
+    else word = `${word} `;
+  
+    return word;
+  };
+  
+  const wrapWordsWithLengthEight = (target) => {
+    //Render HTML to target
+    const text = (target.textContent).trim().split(' ').map(check).join('');
+    target.innerHTML = text;
+  }
+  
+  window.addEventListener('load', setup);
+  
+    </script>
+</body>
+</html>
+

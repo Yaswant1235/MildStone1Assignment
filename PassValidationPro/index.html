@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <center>
+        <title> Password Validation</title>
+</head>
+<script>
+
+</script>
+
+<body>
+    <h1 style="color:orange">StudyTonight</h1>
+    <h3> Please Fill the form </h3>
+
+    <form onsubmit="return validateForm()">
+
+
+        <td> Full Name* </td>
+        <input type="text" id="fname" value="">
+        <span id="blankMsg" style="color:orange"> </span> <br><br>
+
+
+        <td> Create Password* </td>
+        <input type="password" id="pswd1" value="">
+        <span id="message1" style="color:orange"> </span> <br><br>
+
+        <td> Confirm Password* </td>
+        <input type="password" id="pswd2" value="">
+        <span id="message2" style="color:orange"> </span> <br><br>
+
+        <input type="submit" value="Submit">
+
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</center>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the final order price</title>
+</head>
+
+<body>
+
+    <div>
+        Quantity — Price for each
+    </div>
+    <div>
+        <div>1 — $110</div>
+        <div>10 — $105</div>
+        <div>20 — $100</div>
+    </div>
+    <div>
+        Number of items:
+        <div>
+            <input id="txt" onblur="conversion(this.value)" onchange="conversion(this.value)"
+                onkeypress="conversion(this.value)" onkeyup="conversion(this.value)" type="number">
+        </div>
+    </div>
+    <div>
+        Total:
+        <div id="div"></div>
+    </div>
+    <div>
+        Price for each:
+        <div id="price"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

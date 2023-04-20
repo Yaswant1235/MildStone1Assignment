@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgb(23, 60, 51);
+
+}
+
+body input {
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+#candidate:hover {
+    border-color: red;
+    box-shadow: 0 0 20px;
+}
+
+.boxShadow {
+    box-shadow: 0 0 30px;
+    padding: 10px 20px;
+    margin: 100px 200px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 30px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(43, 56, 56);
+
+    gap: 100px;
+    padding: 10px 40px;
+    font-weight: 900;
+    border: none;
+}

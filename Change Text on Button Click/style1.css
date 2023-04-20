@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 78, 62);
+}
+
+body h1:hover {
+    color: red;
+    font-size: 90px;
+}
+
+#btn {
+    padding: 10px 8px;
+    border-radius: 8px;
+    background-color: violet;
+    border: none;
+    color: white;
+
+}
+
+#btn:hover {
+    font-size: 10px;
+}
